@@ -17,4 +17,83 @@ body {
   background-color: whitesmoke;
   margin: 0 auto;
 }
+
+.opciones {
+  height: 100px;
+  width: 100%;
+}
+
+.opciones nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.opciones nav a {
+  background-color: #ff6600;
+  color: white;
+  height: 100%;
+  padding: 30px 40px;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 25%;
+  text-align: center;
+}
+
+.opciones nav a:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.contenedor {
+  height: 500px;
+  width: 100%;
+}
+
+.intro {
+  padding: 70px 40px 80px 40px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.intro h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80%;
+}
+
+.intro a {
+  display: block;
+  font-size: 1.5em;
+  background-color: #0c0c72;
+  color: white;
+  outline: gray;
+  height: 75px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 75px;
+  width: 20%;
+  text-align: center;
+  border-radius: 25%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
 /*# sourceMappingURL=style.css.map */
