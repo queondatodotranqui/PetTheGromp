@@ -4,7 +4,9 @@ var contenido = document.getElementById('content');
 document.addEventListener('click', (e)=>{
     if(e.target.localName === 'a'){
 
-        let archivo = e.target.id + '.html';
+        e.preventDefault();
+
+        let archivo = '/elementos/' + e.target.id + '.html';
         let xhr = ajax(archivo);
 
         xhr.addEventListener('load', ()=>{
@@ -20,12 +22,15 @@ document.addEventListener('click', (e)=>{
 
 window.addEventListener('load', ()=>{
 
-    let home = 'home.html';
+    let home = '/elementos/home.html';
     let xhr = ajax(home);
 
     xhr.addEventListener('load', ()=>{
         if(xhr.status === 200){
             contenido.innerHTML = xhr.response;
+            history.pushState({
+                template : xhr.response
+            }, '', home);
         }
     })
 })
