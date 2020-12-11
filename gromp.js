@@ -2,6 +2,9 @@
 var contenido = document.getElementById('content');
 
 document.addEventListener('click', (e)=>{
+
+    //console.log(e);
+
     if(e.target.localName === 'a'){
 
         e.preventDefault();

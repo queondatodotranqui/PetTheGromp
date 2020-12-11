@@ -13,7 +13,7 @@ body {
 
 .main-content {
   width: 70%;
-  height: 600px;
+  height: 650px;
   background-color: whitesmoke;
   margin: 0 auto;
 }
@@ -95,5 +95,53 @@ body {
 .intro a:hover {
   -webkit-filter: invert(1);
           filter: invert(1);
+}
+
+.game {
+  padding: 70px 40px 60px 40px;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.gromp {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hands, .legromp {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hands img, .legromp img {
+  height: 100%;
+  width: 350px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
