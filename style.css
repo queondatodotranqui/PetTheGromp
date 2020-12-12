@@ -138,15 +138,33 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .hands img, .legromp img {
   height: 90%;
   width: 350px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.lemove img {
+  position: relative;
+  top: 180px;
+}
+
+.lepet img {
+  height: 80%;
 }
 
 .footer {

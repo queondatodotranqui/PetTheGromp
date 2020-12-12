@@ -109,13 +109,25 @@ body{
     height: 50%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
 
     img{
         height: 90%;
         width: 350px;
         cursor: pointer;
+        transition: 0.3s;
+        align-self: center;
     }
+}
+
+.lemove img{
+    position: relative;
+    top: 180px;
+}
+
+.lepet img{
+    height: 80%;
 }
 
 .footer{

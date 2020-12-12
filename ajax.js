@@ -1,5 +1,7 @@
 
 var contenido = document.getElementById('content');
+//var verifScript = document.querySelectorAll('script');
+
 
 document.addEventListener('click', (e)=>{
 
@@ -20,6 +22,8 @@ document.addEventListener('click', (e)=>{
                 }, '', archivo);
             }
         })
+
+        //var regex = new RegExp(/play/);
     }
 })
 
@@ -49,7 +53,9 @@ function ajax(archivo, metodo){
 }
 
 window.addEventListener('popstate', (e)=>{
+    let file = location.pathname.split('elementos/')[1];
     if(e.state){
+        console.log(e);
         contenido.innerHTML = e.state.template;
     }
 })
