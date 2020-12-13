@@ -113,15 +113,15 @@ body{
     justify-content: flex-end;
 
     img{
-        height: 90%;
+        height: 100%;
         width: 350px;
         cursor: pointer;
-        transition: 0.3s;
+        transition: 0.2s;
         align-self: center;
     }
 }
 
-.lemove img{
+.lemove{
     position: relative;
     top: 180px;
 }

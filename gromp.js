@@ -1,8 +1,8 @@
 
-/*
+
 window.addEventListener('mousedown', (e)=>{
 
-    console.log(e);
+    //console.log(e);
 
     if(e.target.id === 'hands'){
 
@@ -12,6 +12,8 @@ window.addEventListener('mousedown', (e)=>{
         e.target.classList.add('lemove');
 
         legromp.classList.add('lepet');
+
+        console.log(legromp.classList);
 
     }
 })
@@ -28,4 +30,3 @@ window.addEventListener('mouseup', (e)=>{
 
     }
 })
-*/
