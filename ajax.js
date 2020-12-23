@@ -11,7 +11,7 @@ document.addEventListener('click', (e)=>{
 
         e.preventDefault();
 
-        let archivo = '/elementos/' + e.target.id + '.html';
+        let archivo = e.target.id + '.html';
         let xhr = ajax(archivo);
 
         xhr.addEventListener('load', ()=>{
@@ -29,7 +29,7 @@ document.addEventListener('click', (e)=>{
 
 window.addEventListener('load', ()=>{
 
-    let home = '/elementos/home.html';
+    let home = '/home.html';
     let xhr = ajax(home);
 
     xhr.addEventListener('load', ()=>{
@@ -53,7 +53,6 @@ function ajax(archivo, metodo){
 }
 
 window.addEventListener('popstate', (e)=>{
-    let file = location.pathname.split('elementos/')[1];
     if(e.state){
         console.log(e);
         contenido.innerHTML = e.state.template;
