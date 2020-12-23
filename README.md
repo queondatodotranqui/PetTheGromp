@@ -1,4 +1,4 @@
-<img src="/elementos/gromp.png" width="300" height="300">
+<img src="/gromp.png" width="300" height="300">
 
 # PetTheGromp
  Gotta pet the gromp
